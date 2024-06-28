@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container{
+      display: grid;
+      height: 784px;
+      width: 784px;
+      grid-template-columns: 320px  320px 50px;
+      grid-template-rows: 414px 285px 20px;
+      justify-content: center;
+      grid-auto-rows: 20px;
+      
+    
+      
+      
+    }
+    .item{
+      background-color: #F0F1EC;
+    }
+    .one{
+      background-color:  #E72F24;
+    
+      
+    }
+    .two{
+      border-left: 10px solid black;
+    }
+    .five{
+      background-color: #F0F1EC;
+      border-right: 10px solid black;
+      border-bottom: 10px solid black ;
+      border-top: 10px solid black;
+      border-left: 10px solid black;
+    }
+    .six{
+      display: flex;
+      flex-direction: column;
+    }
+    .six .one{
+      height: 130px;
+      background-color:  #004592;
+      border-top: 10px solid black; 
+      border-bottom: 10px solid black;
+    }
+    .six .two{
+      border-top: 10px solid black;
+    }
+    .four{
+      border-bottom: 10px solid black;
+      border-top: 10px solid black ;
+    }
+
+    .flex{
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+    }
+    .eight{
+      display: flex;
+      flex-direction: row;
+      border: 0;
+      height: 20px;
+    
+    }
+    .eight .one{
+      background-color:  #F9D01E;
+      height: 20px;
+      width: 198px;
+      border-left: 10px solid black;
+      border-right: 10px solid black;
+    }
+    .eight .two{
+      height: 20px;
+      width: 153px;
+      border-right: 10px solid black;
+      background-color: #232629;
+    }
+    
+
+
+
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="flex">
+  <div class="container">
+    <div class="item one">
+
+    </div>
+    <div class="item two">
+
+    </div>
+    <div class="item three">
+
+    </div>
+    <div class="item four">
+
+    </div>
+    <div class="item five">
+
+    </div>
+    <div class="item six">
+      <div class="six one"></div>
+      <div class="six two"></div>
+    </div>
+    <div class="item seven"></div>
+    <div class="item eight">
+      <div class="eight one"></div>
+      <div class="eight two"></div>
+    </div>
+    <div class="item">
+
+    </div>
+
+
+  </div>
+</div>
+</body>
+
+</html>
